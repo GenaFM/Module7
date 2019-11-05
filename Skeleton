@@ -1,0 +1,29 @@
+validateUserAnswer //ensures user entries are between 0-100 (inclusive)
+
+calcAverage //computes average from int array and returns int average
+
+bubbleSort //sorts the values (test scores) stored in the array in ascending order
+
+determineGrade //determineGrade computes the average of the 5 test scores, param int array of scores, return char array of grades
+
+displayTestScores //displays each test score and its corresponding letter, as well as the overall average
+
+
+Enter score 1
+that is not an integer X such that: 0<= X <= 100, try again
+Enter score 2
+Enter score 3
+Enter score 4
+Enter score 5
+
+Score LetterGrade
+  59  F
+  60  D
+  70  C
+  80  B
+  90  A
+The average is 71.80
+Press any key to continue
+(exits program)
+  
+	
