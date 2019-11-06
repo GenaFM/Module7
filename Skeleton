@@ -1,14 +1,70 @@
+int score[] 
+int sum 
+String grade[]
+
 validateUserAnswer //ensures user entries are between 0-100 (inclusive)
+	Scanner
+	int positionNum = 0
+	Prompt for entry [positionNum]
+	//catch space and enter
+	if !input.martches [0-9]
+		error
+		reassign input
+	else parseint
+	assign score[positionNum]
+	if score[] > 100 || <0
+		error
+		reassign input
+	position++
+	
 
 calcAverage //computes average from int array and returns int average
+	while positionNum <5
+		 sum = score[positionNum] + sum
+		 positionNum++
+
 
 bubbleSort //sorts the values (test scores) stored in the array in ascending order
+	boolean switch = true
+	int holder
+	
+	while switch = false
+		for positionNum
+			if score[positionNum] > score[positionNum+1]
+				holder = score[positionNum]
+				score[positionNum] = score[positionNum+1]
+				score[positionNum+1] = holder;
+				switch = true
+		
+			
 
-determineGrade //determineGrade computes the average of the 5 test scores, param int array of scores, return char array of grades
+determineGrade //determineGrade  param int array of scores, return char array of grades
+	while positionNum < 5
+		if score[positionNum] > 89 
+			grade[positionNum] = A
+		if score[positionNum] >79 || <90 
+			grade[positionNum] = B
+		if score[positionNum] >69 || <80 
+			grade[positionNum] = C
+		if score[positionNum] >59 || <70 
+			grade[positionNum] = D
+		else
+			grade[positionNum] = F
+		positionNum++
 
 displayTestScores //displays each test score and its corresponding letter, as well as the overall average
 
+	println "Score : LetterGrade"
+	while positionNum<5
+		println score[positionNum] + "     " + grade[positionNum]
+		positionNum++
+	println "The average is" + average
+	println "Press any key to continue" 
+	scan for input
+	system.exit
 
+
+//Professor's program reponses-
 Enter score 1
 that is not an integer X such that: 0<= X <= 100, try again
 Enter score 2
@@ -25,5 +81,3 @@ Score LetterGrade
 The average is 71.80
 Press any key to continue
 (exits program)
-  
-	
